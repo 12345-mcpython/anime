@@ -8,7 +8,6 @@ body:
       value: "# 放置你的文件"
     validations:
       required: true
-  -
   - type: input
     attributes:
       label: 标签
