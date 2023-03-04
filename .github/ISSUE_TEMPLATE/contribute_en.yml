@@ -2,22 +2,15 @@ name: Contribute the repository
 description: Commit the image
 labels: [contribute]
 body:
-  - type: markdown
-    attributes:
-      label: Images
-      value: "# Place your image"
-    validations:
-      required: true
-  - type: input
+  - type: textarea
     attributes:
       label: Tags
       description: Tag the picture.
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
-      label: Address
-      description: Address
+      label: Image address
     validations:
       required: true
   - type: checkboxes

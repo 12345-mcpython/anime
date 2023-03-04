@@ -2,21 +2,17 @@ name: 贡献仓库
 description: 提交图片
 labels: [contribute]
 body:
-  - type: markdown
-    attributes:
-      value: "# 放置你的文件"
-    validations:
-      required: true
-  - type: input
+  - type: textarea
     attributes:
       label: 标签
       description: 这张(些)图片描绘了什么? 有什么人物? 给这张图片打标签.
     validations:
       required: true
-  - type: input
+  - type: textarea
     attributes:
-      label: 地址
-      description: 原作地址
+      label: 图片地址
+    validations:
+      required: true
   - type: checkboxes
     attributes:
       label: 请阅读并确认以下内容
