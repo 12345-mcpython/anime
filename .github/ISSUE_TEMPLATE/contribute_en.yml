@@ -4,6 +4,11 @@ labels: [contribute]
 body:
   - type: textarea
     attributes:
+      label: Push the image to here.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
       label: Tags
       description: Tag the picture.
     validations:

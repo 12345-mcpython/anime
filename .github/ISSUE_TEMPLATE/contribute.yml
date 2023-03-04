@@ -4,6 +4,11 @@ labels: [contribute]
 body:
   - type: textarea
     attributes:
+      label: 拖拽图片到此
+    validations:
+      required: true
+  - type: textarea
+    attributes:
       label: 标签
       description: 这张(些)图片描绘了什么? 有什么人物? 给这张图片打标签.
     validations:
