@@ -4,7 +4,6 @@ labels: [contribute]
 body:
   - type: markdown
     attributes:
-      label: 图片
       value: "# 放置你的文件"
     validations:
       required: true
