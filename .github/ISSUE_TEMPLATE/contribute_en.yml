@@ -1,0 +1,32 @@
+name: Contribute the repository
+description: Commit the image
+labels: [contribute]
+body:
+  - type: markdown
+    attributes:
+      label: Images
+      value: "# Place your image"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Tags
+      description: Tag the picture.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      label: Address
+      description: Address
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Please read and confirm the following
+      options:
+        - label: I confirm that the picture meets the requirements in the CONTROLBUTE.md file
+          required: true
+        - label: I confirm that I didn't submit duplicate photos
+          required: true
+        - label: I'm sure this picture is not nsfw (Not safe for work) (According to actual selection)
+        - label: I'm sure this picture is not AI composite/AI image conversion (eg. Stable-Diffusion/NovelAI) (According to actual selection)

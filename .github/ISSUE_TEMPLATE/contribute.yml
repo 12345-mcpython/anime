@@ -1,0 +1,31 @@
+name: 贡献仓库
+description: 提交图片
+labels: [contribute]
+body:
+  - type: markdown
+    attributes:
+      label: 图片
+      value: "# 放置你的文件"
+    validations:
+      required: true
+  -
+  - type: input
+    attributes:
+      label: 标签
+      description: 这张(些)图片描绘了什么? 有什么人物? 给这张图片打标签.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 地址
+      description: 原作地址
+  - type: checkboxes
+    attributes:
+      label: 请阅读并确认以下内容
+      options:
+        - label: 我确定该图片符合CONTRIBUTE.md文件内的要求
+          required: true
+        - label: 我确定没有提交重复的照片
+          required: true
+        - label: 我确定该图片非nsfw (Not safe for work) (根据实际选择)
+        - label: 我确定该图片非AI合成/AI图转图 (Stable-Diffusion/NovelAI等) (根据实际选择)
